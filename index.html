@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+
+
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- webpage template-->
+  <!-- <link rel="stylesheet" href="website.css"> -->
+  <!-- model-viewer css -->
+  <link rel="stylesheet" href="demo-styles.css">
+
+  <title>RemixFusion</title>
+  <link rel="icon" type="image/x-icon" href="static/images/github.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+
+</head>
+<body>
+
+<style>
+
+  video {
+    width: 100%; 
+    border-radius: 20px; 
+    overflow: hidden;
+    display: inline-block; 
+    margin: 0 auto; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* 外阴影 */
+  }
+
+  .img-fluid {
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease;
+  }
+
+  .img-fluid:hover {
+      transform: scale(1.01);
+  }
+
+  .content.has-text-justifieddd {
+    margin-top: 1rem;  
+  }
+
+  .results-carousel {
+  animation-play-state: paused !important; 
+  }
+  .title.is-4 {
+    text-align: left; 
+  }
+
+  .gray-text {
+  color: gray; 
+  }
+
+  /* 方案一：Flexbox 实现（首选） */
+  .results-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* 按需调整 */
+  }
+  .results-carousel img {
+    width: 100%;
+    max-width: 100%; 
+    object-fit: cover;
+    display: block;
+  }
+
+  
+  
+  
+  
+
+  
+  </style>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">RemixFusion: Residual-based Mixed Representation for Large-scale
+              Online RGB-D Reconstruction</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <span class="author-block"> -->
+                <a href="https://scholar.google.com/citations?user=laTrw7AAAAAJ&hl=en&oi=ao" target="_blank">Yuqing Lan</a><sup>1,*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://www.zhuchenyang.net/" target="_blank">Chenyang Zhu</a><sup>1,*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://shuaifengzhi.com/" target="_blank">Shuaifeng Zhi</a><sup>1</sup>,</span>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://jzhzhang.github.io/" target="_blank">Jiazhao Zhang</a><sup>2</sup>,</span>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://github.com/wzfer" target="_blank">Zhoufeng Wang</a><sup>1</sup>,</span>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://renjiaoyi.github.io/" target="_blank">Renjiao Yi</a><sup>1</sup>,</span>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://ieeexplore.ieee.org/author/37540196000" target="_blank">Yijie Wang</a><sup>1,†</sup>,</span>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://kevinkaixu.net/" target="_blank">Kai Xu</a><sup>1,†</sup>
+                  </span>
+                  </div>
+                  
+                   <!-- <div class="author-affiliation">
+                    <sup>1</sup> National University of Defense Technology 
+                    <sup>2</sup> Xiangjiang Laboratory 
+                    <sup>3</sup> Peking University 
+                  </div> -->
+
+                  <!-- Institutions -->
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block"> 
+                    <sup>1</sup>National University of Defense Technology&nbsp;&nbsp;&nbsp;
+                    <!-- <sup>2</sup>Xiangjiang Laboratory &nbsp;&nbsp;&nbsp; -->
+                    <sup>2</sup>Peking University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </span>
+                  <span class="eql-cntrb">
+                    <small><br>
+                      <sup>*</sup>Joint First Authors &nbsp; &nbsp; 
+                      <sup>†</sup>Corresponding Authors
+                    </small>
+                  </span>
+                </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- <span class="author-block">Institution Name<br>Conferance name and year</span> -->
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <br>
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2507.17594.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Arxiv</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/lanlan96/RemixFusion/tree/master" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (coming soon)</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span> -->
+                </a>
+              </span>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h1 class="title is-3 has-text-centered">Introduction Video</h1>
+      <video poster="" preload="auto" id="tree" autoplay controls muted loop height="100%">
+        <source src="/static/videos/demo.mp4" type="video/mp4">
+         <!-- <source src="static/videos/test.mp4" type="video/mp4"> -->
+      </video>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
+<!-- Contributions -->
+  <section class="section hero">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full" style="max-width: 900px;">
+          <h2 class="title is-3 has-text-centered">Contributions</h2>
+          <div class="content" style="text-align: justify; font-weight: normal;">  
+            <ul>
+              <li style="margin-bottom: 12px;"><span>We propose a mixed residual-based representation for dense RGB-D reconstruction of large-scale scenes, which preserves fine-grained details with relatively low memory and computational cost.</span></li>
+              <li style="margin-bottom: 12px;"><span>We propose a residual-based bundle adjustment technique that employs a tiny MLP for residual-based pose refinement. Compared to traditional BAs, our method improves pose estimation in terms of both efficiency and robustness.</span></li>
+              <li><span>We have implemented an efficient system of online RGB-D dense reconstruction which realizes robust and fine-grained real-time reconstruction for large scenes over 1000𝑚<sup>2</sup> with an affordable GPU memory footprint.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contributions -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The introduction of the neural implicit representation has notably propelled the advancement of online dense reconstruction techniques. Compared to traditional explicit representations, such as TSDF, it substantially improves the mapping completeness and memory efficiency. However, the lack of reconstruction details and the time-consuming learning of neural representations hinder the widespread application of neural-based methods to large-scale online reconstruction. We introduce RemixFusion, a novel residual-based mixed representation for scene reconstruction and camera pose estimation dedicated to high-quality and large-scale online RGB-D reconstruction. In particular, we propose a residual-based map representation comprised of an explicit coarse TSDF grid and an implicit neural module that produces residuals representing fine-grained details to be added to the coarse grid. Such mixed representation allows for detail-rich reconstruction with bounded time and memory budget, contrasting with the overly-smoothed results by the purely implicit representations, thus paving the way for high-quality camera tracking. Furthermore, we extend the residual-based representation to handle multi-frame joint pose optimization via bundle adjustment (BA). In contrast to the existing methods, which optimize poses directly, we opt to optimize pose changes. Combined with a novel technique for adaptive gradient amplification, our method attains better optimization convergence and global optimality. Furthermore, we adopt a local moving volume to factorize the whole mixed scene representation with a divide-and-conquer design to facilitate efficient online learning in our residual-based framework. Extensive experiments demonstrate that our method surpasses all state-of-the-art ones, including those based either on explicit or implicit representations, in terms of the accuracy of both mapping and tracking on large-scale scenes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Overview -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container" style="max-width: 1100px;">
+        <h2 class="title has-text-centered">Method Overview</h2>
+        <img class="img-fluid"  src="static/images/method.png" />
+        <p>
+          <div class="content has-text-justifieddd">
+          <b>Method Overview.</b> (a) Given RGB-D inputs, the pose estimation is based on the frame-to-model randomized optimization on a scalable moving volume, providing the initial pose estimation. (b) Based on the initial poses, a global MLP is utilized to output the residuals for multi-view consistent pose refinement, using the rendering loss and geometric loss, which are backward propagated through the global reconstruction model. (c) For reconstruction, RemixFusion consists of a coarse TSDF grid, which records the low-frequency scene structure, and an implicit neural map including the hash embedding and tiny decoders, which encode the high-frequency geometry details. TSDF and RGB residuals are decoded based on these embeddings, which are added to the coarse grid to recover the final reconstruction. The residual-based BA and mapping are parallel to the front-end tracking. The residual designs in both pose estimation and reconstruction ensure efficiency and accuracy.
+          </div>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Visual results -->
+  <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container" style="max-width: 1100px;">
+          <h2 class="title has-text-centered">Experimental Results</h2>
+          <div style="text-align: center;">
+          
+          <img class="img-fluid"  src="static/images/gallery.png" />
+          </div>
+          <p>
+            <div class="content has-text-justifieddd">
+            <b>Qualitative Results.</b> Gallery of 3D reconstruction and camera tracking on dining of BS3D, building2 of FastCaMo-Large, and office of self-captured sequences.
+            These three sequences are composed of 5572, 7259, and 8656 images, which correspond to over 1000𝑚<sup>2</sup> , 200𝑚<sup>2</sup> , and 180𝑚<sup>2</sup>, respe-ctively. The colorized trajectory
+            indicates the estimated poses from the beginning (red) to the end (blue). Zoom-in comparisons are marked with red rectangles. Our method achieves the most
+            accurate and robust performance in real-time, while there are failures or severe and obvious drifts for other approaches.
+            </div>
+          </p>
+
+          <div class="content has-text-justifieddd">
+          <img class="img-fluid"  src="static/images/teaser.png" />
+          <b>Representative Image.</b> We present RemixFusion, a residual-based RGB-D framework by virtue of both explicit and implicit representations for large-scale online dense
+          reconstruction. RemixFusion can support real-time fine-grained reconstruction in a memory-efficient way. It only costs 9.8GB GPU memory with 12 FPS for
+          the about 400𝑚<sup>2</sup> reconstruction above, while other methods [Johari et al. 2023; Tang et al. 2023; Zhu et al. 2022] struggle in both tracking and reconstruction in
+          real time. Traditional explicit methods fail for this scene. GS-ICP SLAM [Ha et al. 2024] is the SOTA 3DGS-based SLAM. The average results of reconstruction
+          and tracking on the BS3D dataset as well as the system FPS and GPU memory usage on the above scene are shown on the right, which illustrates RemixFusion
+          obtains better performance and efficiency. RemixFusion-lite denotes the lightweight version and achieves decent performance with about 25 FPS.</div>
+        </div>
+        
+      </div>
+  </section>
+  <!--End Visual results -->
+
+
+
+<!-- Video carousel -->
+
+<meta charset="UTF-8">
+  <style>
+
+    .image-compare {
+      position: relative;
+      height: 300px; 
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      margin-bottom: 25px; /* 调整此值控制间距大小 */
+    }
+    
+
+    .image-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+
+    .image-left {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      clip-path: inset(0 50% 0 0); /* 初始显示50% */
+    }
+    
+    .image-right {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+
+    .divider {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      background: white;
+      cursor: ew-resize;
+      z-index: 10;
+      transform: translateX(-50%);
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+
+    .divider-handle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+
+    }
+
+    .caption-left {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.5); 
+      padding: 8px 12px;
+      border-radius: 4px;
+      color: white;
+      font-size: 14px;
+    }
+
+
+    .caption-right {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.5); 
+      padding: 8px 12px;
+      border-radius: 4px;
+      color: white;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  
+
+
+
+
+
+
+
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{lan2025remixfusion,
+        title={RemixFusion: Residual-based Mixed Representation for Large-scale Online RGB-D Reconstruction},
+        author={Lan, Yuqing and Zhu, Chenyang and Zhi, Shuaifeng and Zhang, Jiazhao and Wang, Zhoufeng and Yi, Renjiao and Wang, Yijie and Xu, Kai},
+        journal={arXiv preprint arXiv:2507.17594},
+        year={2025}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<!-- Model Viewer -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
