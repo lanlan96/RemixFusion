@@ -4,21 +4,27 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
   <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
 
 
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- webpage template-->
-  <!-- <link rel="stylesheet" href="website.css"> -->
-  <!-- model-viewer css -->
-  <link rel="stylesheet" href="demo-styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>RemixFusion</title>
+
+  <title>BoxFusion</title>
   <link rel="icon" type="image/x-icon" href="static/images/github.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -77,19 +83,15 @@
 <style>
 
   video {
-    width: 100%; 
-    border-radius: 20px; 
-    overflow: hidden;
+    width: 97%; 
     display: inline-block; 
     margin: 0 auto; 
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* 外阴影 */
   }
-
   .img-fluid {
           border-radius: 8px;
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
           transition: transform 0.3s ease;
-  }
+      }
 
   .img-fluid:hover {
       transform: scale(1.01);
@@ -124,10 +126,8 @@
     display: block;
   }
 
-  
-  
-  
-  
+
+
 
   
   </style>
@@ -137,33 +137,33 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">RemixFusion: Residual-based Mixed Representation for Large-scale
-              Online RGB-D Reconstruction</h1>
+            <h1 class="title is-1 publication-title">BoxFusion: Reconstruction-Free Open-Vocabulary 3D Object
+            Detection via Real-Time Multi-View Box Fusion</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
                 <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
                 <span class="author-block"> -->
-                <a href="https://scholar.google.com/citations?user=laTrw7AAAAAJ&hl=en&oi=ao" target="_blank">Yuqing Lan</a><sup>1,*</sup>,</span>
+                Yuqing Lan</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="https://www.zhuchenyang.net/" target="_blank">Chenyang Zhu</a><sup>1,*</sup>,</span>
+                  <a href="https://www.zhuchenyang.net/" target="_blank">Chenyang Zhu</a><sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="https://shuaifengzhi.com/" target="_blank">Shuaifeng Zhi</a><sup>1</sup>,</span>
+                    Zhirui Gao</a><sup>1</sup>,</span>
                   </span>
                   <span class="author-block">
-                    <a href="https://jzhzhang.github.io/" target="_blank">Jiazhao Zhang</a><sup>2</sup>,</span>
+                    <a href="https://jzhzhang.github.io/" target="_blank">Jiazhao Zhang</a><sup>3</sup>,</span>
                   </span>
                   <span class="author-block">
-                    <a href="https://github.com/wzfer" target="_blank">Zhoufeng Wang</a><sup>1</sup>,</span>
+                    Yihan Cao</a><sup>1</sup>,</span>
                   </span>
                   <span class="author-block">
                     <a href="https://renjiaoyi.github.io/" target="_blank">Renjiao Yi</a><sup>1</sup>,</span>
                   </span>
                   <span class="author-block">
-                    <a href="https://ieeexplore.ieee.org/author/37540196000" target="_blank">Yijie Wang</a><sup>1,†</sup>,</span>
+                    Yijie Wang</a><sup>1,†</sup>,</span>
                   </span>
                   <span class="author-block">
-                    <a href="https://kevinkaixu.net/" target="_blank">Kai Xu</a><sup>1,†</sup>
+                    <a href="https://kevinkaixu.net/" target="_blank">Kai Xu</a><sup>1,2,†</sup>
                   </span>
                   </div>
                   
@@ -177,12 +177,11 @@
                 <div class="is-size-5 publication-authors">
                   <span class="author-block"> 
                     <sup>1</sup>National University of Defense Technology&nbsp;&nbsp;&nbsp;
-                    <!-- <sup>2</sup>Xiangjiang Laboratory &nbsp;&nbsp;&nbsp; -->
-                    <sup>2</sup>Peking University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <sup>2</sup>Xiangjiang Laboratory &nbsp;&nbsp;&nbsp;
+                    <sup>3</sup>Peking University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   </span>
                   <span class="eql-cntrb">
                     <small><br>
-                      <sup>*</sup>Joint First Authors &nbsp; &nbsp; 
                       <sup>†</sup>Corresponding Authors
                     </small>
                   </span>
@@ -193,11 +192,11 @@
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
-                  <br>
+                  <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2507.17594.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2506.15610.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -219,7 +218,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/lanlan96/RemixFusion/tree/master" target="_blank"
+                    <a href="https://github.com/lanlan96/BoxFusion/tree/master" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -239,7 +238,7 @@
                 </a>
               </span>
             </div>
-
+          </div>
         </div>
       </div>
     </div>
@@ -251,9 +250,10 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <h1 class="title is-3 has-text-centered">Introduction Video</h1>
+      <h1 class="title is-3 has-text-centered">Real-world Online Demo</h1>
       <video poster="" preload="auto" id="tree" autoplay controls muted loop height="100%">
-        <source src="https://github.com/lanlan96/RemixFusion/raw/refs/heads/page_branch/static/videos/demo.mp4" type="video/mp4">
+        <source src="https://github.com/lanlan96/BoxFusion/raw/refs/heads/page_branch/static/videos/demo.mp4" type="video/mp4">
+         <!-- <source src="static/videos/test.mp4" type="video/mp4"> -->
       </video>
     </div>
   </div>
@@ -269,9 +269,10 @@
           <h2 class="title is-3 has-text-centered">Contributions</h2>
           <div class="content" style="text-align: justify; font-weight: normal;">  
             <ul>
-              <li style="margin-bottom: 12px;"><span>We propose a mixed residual-based representation for dense RGB-D reconstruction of large-scale scenes, which preserves fine-grained details with relatively low memory and computational cost.</span></li>
-              <li style="margin-bottom: 12px;"><span>We propose a residual-based bundle adjustment technique that employs a tiny MLP for residual-based pose refinement. Compared to traditional BAs, our method improves pose estimation in terms of both efficiency and robustness.</span></li>
-              <li><span>We have implemented an efficient system of online RGB-D dense reconstruction which realizes robust and fine-grained real-time reconstruction for large scenes over 1000𝑚<sup>2</sup> with an affordable GPU memory footprint.</span></li>
+              <li style="margin-bottom: 12px;"><span>We propose a novel reconstruction-free paradigm for online open-vocabulary 3D object detection, which models structural object layouts with desirable running and memory efficiency.</span></li>
+              <li style="margin-bottom: 12px;"><span>We propose a multi-view box fusion technique based on particle filtering using random optimization, enabling real-time and consistent 3D bounding box detection.</span></li>
+              <li><span>We have implemented an efficient system of online open-vocabulary 3D object detection. Extensive experiments validate
+the superior performance and robustness of our method in various challenging scenarios.</span></li>
             </ul>
           </div>
         </div>
@@ -288,7 +289,20 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The introduction of the neural implicit representation has notably propelled the advancement of online dense reconstruction techniques. Compared to traditional explicit representations, such as TSDF, it substantially improves the mapping completeness and memory efficiency. However, the lack of reconstruction details and the time-consuming learning of neural representations hinder the widespread application of neural-based methods to large-scale online reconstruction. We introduce RemixFusion, a novel residual-based mixed representation for scene reconstruction and camera pose estimation dedicated to high-quality and large-scale online RGB-D reconstruction. In particular, we propose a residual-based map representation comprised of an explicit coarse TSDF grid and an implicit neural module that produces residuals representing fine-grained details to be added to the coarse grid. Such mixed representation allows for detail-rich reconstruction with bounded time and memory budget, contrasting with the overly-smoothed results by the purely implicit representations, thus paving the way for high-quality camera tracking. Furthermore, we extend the residual-based representation to handle multi-frame joint pose optimization via bundle adjustment (BA). In contrast to the existing methods, which optimize poses directly, we opt to optimize pose changes. Combined with a novel technique for adaptive gradient amplification, our method attains better optimization convergence and global optimality. Furthermore, we adopt a local moving volume to factorize the whole mixed scene representation with a divide-and-conquer design to facilitate efficient online learning in our residual-based framework. Extensive experiments demonstrate that our method surpasses all state-of-the-art ones, including those based either on explicit or implicit representations, in terms of the accuracy of both mapping and tracking on large-scale scenes.
+            Open-vocabulary 3D object detection has gained significant interest due to its critical applications in autonomous driving and
+            embodied AI. Existing detection methods, whether offline or online, typically rely on dense point cloud reconstruction, which
+            imposes substantial computational overhead and memory constraints, hindering real-time deployment in downstream tasks. To
+            address this, we propose a novel reconstruction-free online framework tailored for memory-efficient and real-time 3D detection.
+            Specifically, given streaming posed RGB-D video input, we leverage Cubify Anything as a pre-trained visual foundation model
+            (VFM) for single-view 3D object detection by bounding boxes, coupled with CLIP to capture open-vocabulary semantics of
+            detected objects. To fuse all detected bounding boxes across different views into a unified one, we employ an association
+            module for correspondences of multi-views and an optimization module to fuse the 3D bounding boxes of the same instance
+            predicted in multi-views. The association module utilizes 3D Non-Maximum Suppression (NMS) and a box correspondence
+            matching module, while the optimization module uses an IoU-guided efficient random optimization technique based on particle
+            filtering to enforce multi-view consistency of the 3D bounding boxes while minimizing computational complexity. Extensive
+            experiments on ScanNetV2 and CA-1M datasets demonstrate that our method achieves state-of-the-art performance among
+            online methods. Benefiting from this novel reconstruction-free paradigm for 3D object detection, our method exhibits great
+            generalization abilities in various scenarios, enabling real-time perception even in environments exceeding 1000 square meters.
           </p>
         </div>
       </div>
@@ -302,10 +316,13 @@
     <div class="hero-body">
       <div class="container" style="max-width: 1100px;">
         <h2 class="title has-text-centered">Method Overview</h2>
-        <img class="img-fluid"  src="static/images/method.png" />
+        <img class="img-fluid"  src="static/images/pipeline.png" />
         <p>
           <div class="content has-text-justifieddd">
-          <b>Method Overview.</b> (a) Given RGB-D inputs, the pose estimation is based on the frame-to-model randomized optimization on a scalable moving volume, providing the initial pose estimation. (b) Based on the initial poses, a global MLP is utilized to output the residuals for multi-view consistent pose refinement, using the rendering loss and geometric loss, which are backward propagated through the global reconstruction model. (c) For reconstruction, RemixFusion consists of a coarse TSDF grid, which records the low-frequency scene structure, and an implicit neural map including the hash embedding and tiny decoders, which encode the high-frequency geometry details. TSDF and RGB residuals are decoded based on these embeddings, which are added to the coarse grid to recover the final reconstruction. The residual-based BA and mapping are parallel to the front-end tracking. The residual designs in both pose estimation and reconstruction ensure efficiency and accuracy.
+          <b>Method Overview of BoxFusion.</b> (a) Given online RGB-D images with camera poses, we use Cubify Anything to generate bounding
+          box proposals for each keyframe, and back-project them to image planes to get the image crops to obtain the open-vocabulary semantics
+          with CLIP. (b) We employ an association module to perform 3D NMS for global boxes with proposals from the new keyframe, removing
+          redundant boxes and associating those belonging to the same object. (b) We employ an association module to perform 3D NMS for global boxes with proposals from the new keyframe, removing redundant boxes and associating those belonging to the same object. (c) With the associated candidate boxes of an object, we adopt random optimization based on particle filtering to fuse these candidate boxes into a multi-view consistent one using the IoU of the convex hulls of projected box corners. In this way, our method can efficiently detect fine-grained objects in real time without reconstruction.
           </div>
         </p>
       </div>
@@ -318,29 +335,8 @@
       <div class="hero-body">
         <div class="container" style="max-width: 1100px;">
           <h2 class="title has-text-centered">Experimental Results</h2>
-          <div style="text-align: center;">
-          
-          <img class="img-fluid"  src="static/images/gallery.png" />
-          </div>
-          <p>
-            <div class="content has-text-justifieddd">
-            <b>Qualitative Results.</b> Gallery of 3D reconstruction and camera tracking on dining of BS3D, building2 of FastCaMo-Large, and office of self-captured sequences.
-            These three sequences are composed of 5572, 7259, and 8656 images, which correspond to over 1000𝑚<sup>2</sup> , 200𝑚<sup>2</sup> , and 180𝑚<sup>2</sup>, respe-ctively. The colorized trajectory
-            indicates the estimated poses from the beginning (red) to the end (blue). Zoom-in comparisons are marked with red rectangles. Our method achieves the most
-            accurate and robust performance in real-time, while there are failures or severe and obvious drifts for other approaches.
-            </div>
-          </p>
-
-          <div class="content has-text-justifieddd">
-          <img class="img-fluid"  src="static/images/teaser.png" />
-          <b>Representative Image.</b> We present RemixFusion, a residual-based RGB-D framework by virtue of both explicit and implicit representations for large-scale online dense
-          reconstruction. RemixFusion can support real-time fine-grained reconstruction in a memory-efficient way. It only costs 9.8GB GPU memory with 12 FPS for
-          the about 400𝑚<sup>2</sup> reconstruction above, while other methods [Johari et al. 2023; Tang et al. 2023; Zhu et al. 2022] struggle in both tracking and reconstruction in
-          real time. Traditional explicit methods fail for this scene. GS-ICP SLAM [Ha et al. 2024] is the SOTA 3DGS-based SLAM. The average results of reconstruction
-          and tracking on the BS3D dataset as well as the system FPS and GPU memory usage on the above scene are shown on the right, which illustrates RemixFusion
-          obtains better performance and efficiency. RemixFusion-lite denotes the lightweight version and achieves decent performance with about 25 FPS.</div>
+          <img class="img-fluid"  src="static/images/results.png" />
         </div>
-        
       </div>
   </section>
   <!--End Visual results -->
@@ -435,29 +431,198 @@
 </head>
 <body>
 
-  
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title has-text-centered">Visual Comparisons</h2>
+      <div class="content has-text-justified">
 
+      </div>
+      <div class="columns is-centered">
+        <!-- 左侧列 -->
+        <div class="column">
+          <div class="content">
+            <div class="columns is-centered">
+              <div class="column is-full-width">
+                <!-- 修改后的图片对比组件 -->
+                <!-- 图片对比组件 -->
+                <div class="image-compare">
+                  <div class="image-container">
+                    <!-- 右侧图片（完整显示） -->
+                    <img src="static/images/oaseg-1.png" class="image-right" alt="Right Image">
+                    <!-- 左侧图片（被裁剪区域） -->
+                    <img src="static/images/ours-1.png" class="image-left" alt="Left Image">
+                    <div class="caption-left">Ours</div>
+                    <div class="caption-right">OnlineAnySeg</div>
+                  </div>
+                  <!-- 可拖动的分隔线 -->
+                  <div class="divider">
+                    <div class="divider-handle"></div>
+                  </div>
+                </div>
+                
+                <!-- 重复相同结构 -->
+                <div class="image-compare">
+                  <div class="image-container">
+                    <!-- 右侧图片（完整显示） -->
+                    <img src="static/images/slm-1.png" class="image-right" alt="Right Image">
+                    <!-- 左侧图片（被裁剪区域） -->
+                    <img src="static/images/ours-1.png" class="image-left" alt="Left Image">
+                    <div class="caption-left">Ours</div>
+                    <div class="caption-right">SpatialLM</div>
+                  </div>
+                  <!-- 可拖动的分隔线 -->
+                  <div class="divider">
+                    <div class="divider-handle"></div>
+                  </div>
+                </div>
 
+                <!-- 重复相同结构 -->
+                <div class="image-compare">
+                  <div class="image-container">
+                    <!-- 右侧图片（完整显示） -->
+                    <img src="static/images/fcaf-1.png" class="image-right" alt="Right Image">
+                    <!-- 左侧图片（被裁剪区域） -->
+                    <img src="static/images/ours-1.png" class="image-left" alt="Left Image">
+                    <div class="caption-left">Ours</div>
+                    <div class="caption-right">FCAF</div>
+                  </div>
+                  <!-- 可拖动的分隔线 -->
+                  <div class="divider">
+                    <div class="divider-handle"></div>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 右侧列 -->
+        <div class="column">
+          <div class="columns is-centered">
+            <div class="column content">
+              <!-- 右侧对比组件 -->
+              <div class="image-compare">
+                  <div class="image-container">
+                    <!-- 右侧图片（完整显示） -->
+                    <img src="static/images/oaseg-2.png" class="image-right" alt="Right Image">
+                    <!-- 左侧图片（被裁剪区域） -->
+                    <img src="static/images/ours-2.png" class="image-left" alt="Left Image">
+                    <div class="caption-left">Ours</div>
+                    <div class="caption-right">OnlineAnySeg</div>
+                  </div>
+                  <!-- 可拖动的分隔线 -->
+                  <div class="divider">
+                    <div class="divider-handle"></div>
+                  </div>
+                </div>
+              
+              <!-- 更多对比项 -->
+               <div class="image-compare">
+                  <div class="image-container">
+                    <!-- 右侧图片（完整显示） -->
+                    <img src="static/images/slm-2.png" class="image-right" alt="Right Image">
+                    <!-- 左侧图片（被裁剪区域） -->
+                    <img src="static/images/ours-2.png" class="image-left" alt="Left Image">
+                    <div class="caption-left">Ours</div>
+                    <div class="caption-right">SpatialLM</div>
+                  </div>
+                  <!-- 可拖动的分隔线 -->
+                  <div class="divider">
+                    <div class="divider-handle"></div>
+                  </div>
+                </div>
+                <!-- 重复相同结构 -->
+                <div class="image-compare">
+                  <div class="image-container">
+                    <!-- 右侧图片（完整显示） -->
+                    <img src="static/images/fcaf-2.png" class="image-right" alt="Right Image">
+                    <!-- 左侧图片（被裁剪区域） -->
+                    <img src="static/images/ours-2.png" class="image-left" alt="Left Image">
+                    <div class="caption-left">Ours</div>
+                    <div class="caption-right">FCAF</div>
+                  </div>
+                  <!-- 可拖动的分隔线 -->
+                  <div class="divider">
+                    <div class="divider-handle"></div>
+                  </div>
+                </div>
+                
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      <h2 class="title is-5"><span class="gray-text">Notes: our method does not rely on dense reconstruction and the mesh is only for visualization here.</span></h2>
+    </div>
+    
+  </section>
 
+<!-- End video carousel -->
+
+<!-- Other video-->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop has-text-centered">
+        <h2 class="title has-text-centered">Online Demos on Public Datasets</h2>
+        <div id="results-carousel-teaser1" class="carousel results-carousel">
+          <div class="item item-video1">
+            <h2 class="title is-4">ScanNetV2: scene0207_00 <span class="gray-text">(w/ semantics)</span></h2>
+            <video poster="" preload="auto" id="video1"  playsinline controls muted height="100%">
+              <source src="https://github.com/lanlan96/BoxFusion/raw/refs/heads/page_branch/static/videos/ScanNet-scene0207.mp4"
+              type="video/webm">
+            </video>
+
+          </div>
+          <div class="item item-video2">
+            <h2 class="title is-4">CA-1M: 42899611</h2>
+            <video poster="" preload="auto" id="video2" playsinline  controls muted height="100%">
+              <source src="https://github.com/lanlan96/BoxFusion/raw/refs/heads/page_branch/static/videos/CA1M-42899611.mp4"
+              type="video/webm">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <h2 class="title is-4">BS3D: dining</h2>
+            <video poster="" preload="auto" id="video3"  playsinline controls muted height="100%">
+              <!-- <source src="https://media.githubusercontent.com/media/lanlan96/BoxFusion/refs/heads/page_branch/static/videos/BS3D-dining.webm" -->
+               <source src="https://github.com/lanlan96/BoxFusion/raw/refs/heads/page_branch/static/videos/BS3D-dining.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- End Other video -->
 
 
 
 
 
 <!--BibTex citation -->
-<section class="section" id="BibTeX">
+  <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{lan2025remixfusion,
-        title={RemixFusion: Residual-based Mixed Representation for Large-scale Online RGB-D Reconstruction},
-        author={Lan, Yuqing and Zhu, Chenyang and Zhi, Shuaifeng and Zhang, Jiazhao and Wang, Zhoufeng and Yi, Renjiao and Wang, Yijie and Xu, Kai},
-        journal={arXiv preprint arXiv:2507.17594},
-        year={2025}
-      }</code></pre>
+      <pre><code>@article{lan2025boxfusion,
+  title={BoxFusion: Reconstruction-Free Open-Vocabulary 3D Object Detection via Real-Time Multi-View Box Fusion},
+  author={Lan, Yuqing and Zhu, Chenyang and Gao, Zhirui and Zhang, Jiazhao and Cao, Yihan and Yi, Renjiao and Wang, Yijie and Xu, Kai},
+  journal={arXiv preprint arXiv:2506.15610},
+  year={2025}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
 
+<section class="section" id="Acknowledgements" style="padding-top: 0rem;">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-4" style="font-weight: 700;">Acknowledgements</h2>
+      <p>
+        We are deeply grateful for the invaluable support provided by Yuanhong Yu and Sida Peng from State Key Lab of CAD & CG, Zhejiang University.
+      </p>
+    </div>
+  </section>
 
 
 
@@ -482,13 +647,57 @@
 
 
 
+<script>
+// 为每个滑块创建独立的作用域
+document.querySelectorAll('.divider').forEach(divider => {
+  const container = divider.closest('.image-compare');
+  const leftImage = container.querySelector('.image-left');
+  let isDragging = false;
+  
+  // 鼠标事件处理
+  divider.addEventListener('mousedown', function(e) {
+    e.preventDefault();
+    isDragging = true;
+    document.body.style.cursor = 'ew-resize';
+  });
+  
+  // 触摸事件支持
+  divider.addEventListener('touchstart', function(e) {
+    e.preventDefault();
+    isDragging = true;
+    document.body.style.cursor = 'ew-resize';
+  });
+  
+  // 移动事件处理
+  function handleMove(e) {
+    if (!isDragging) return;
+    
+    const rect = container.getBoundingClientRect();
+    const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+    if (!clientX) return;
+    
+    const x = clientX - rect.left;
+    const percent = Math.max(1, Math.min(99, (x / rect.width) * 100));
+    
+    // 更新当前滑块位置
+    divider.style.left = `${percent}%`;
+    leftImage.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
+  }
+  
+  // 释放事件处理
+  function handleRelease() {
+    isDragging = false;
+    document.body.style.cursor = '';
+  }
+  
+  // 事件监听
+  document.addEventListener('mousemove', handleMove);
+  document.addEventListener('touchmove', handleMove);
+  document.addEventListener('mouseup', handleRelease);
+  document.addEventListener('touchend', handleRelease);
+});
+</script>
 
-
-
-
-
-<!-- Model Viewer -->
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 
 <!-- Statcounter tracking code -->
