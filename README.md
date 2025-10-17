@@ -1,6 +1,7 @@
 <div align="center">
 <h1>RemixFusion: Residual-Based Mixed Representation for Large-Scale Online RGB-D Reconstruction</h1>
 
+ACM Transactions on Graphics (to be presented at SIGGRAPH Asia 2025)
 
 <a href="https://arxiv.org/pdf/2507.17594"><img src="https://img.shields.io/badge/arXiv-2507.17594-b31b1b" alt="arXiv"></a>
 <a href="https://lanlan96.github.io/RemixFusion/"><img src="https://img.shields.io/badge/Project_Page-green" alt="Project Page"></a>
