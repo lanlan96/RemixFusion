@@ -1,0 +1,14 @@
+inherit_from: configs/ScanNet/scannet.yaml
+mapping:
+  bound: [[-0.1,8.6],[-0.1,8.9],[-0.3,3.3]]
+  marching_cubes_bound: [[-0.1,8.6],[-0.1,8.9],[-0.3,3.3]]
+  clamp: 1.5 
+
+data:
+  datadir: /home/lanyuqing/dataset/scannet/scene0000_00/frames
+  trainskip: 1
+  output: output/scannet/scene0000_00
+  exp_name: test
+
+
+

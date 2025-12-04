@@ -1,0 +1,159 @@
+dataset: 'BS3D'
+print_ape: 0
+
+data:
+  downsample: 1 
+  sc_factor: 1
+  translation: 0
+  num_workers: 1 
+  exp_name: test
+
+globalV:
+  use: 1
+  base_resolution: 200 
+  n_levels: 1
+  per_level_scale: 1
+  n_features_per_level: 4
+
+mapping:
+  sample: 2048 
+  first_mesh: False
+  iters: 5 
+  BA_iters: 5
+  lr_embed: 0.01
+  lr_embed_res: 0.01
+  lr_decoder: 0.01
+  lr_rot: 0.0005 
+  lr_trans: 0.0005 
+  lr_pose: 0.0005 
+  keyframe_every: 5 
+  map_every: 5 
+  n_pixels: 0.05 
+  first_iters: 500
+  optim_cur: False 
+  min_pixels_cur: 100 
+  map_accum_step: 1
+  pose_accum_step: 1 
+  map_wait_step: 0
+  filter_depth: True 
+  opt_pose: True  
+  clamp: 2.0 
+  pose_scale: 1.0
+  save_ckpt: False
+
+tracking:
+  ignore_edge_W: 20
+  ignore_edge_H: 20
+  const_speed: False 
+
+RO:
+  init_size: 0.01 
+  scaling_coefficient: 0.09 
+  particle_iter_lens: 20  
+  PST_path: PFO/fps_uniform_sphere
+  PST_size: [10240,3072,1024] 
+  count_search: 200
+  fix_level_index: 0 
+  filter_weight: 2
+  rgb_rose: 0 
+  rgb_rose_weight: 0.1 
+  save_volume: 0 
+  save_freq: 1000 
+  cut: 0
+  cut_dist: 8.0 
+  sample_range: 0.0 
+  iterative_scale: False
+
+grid:
+  enc: 'HashGrid'
+  tcnn_encoding: True
+  hash_size: 21 
+  voxel_color: 0.08  
+  voxel_sdf: 0.02 
+
+pos:
+  enc: 'OneBlob'
+  n_bins: 16
+
+decoder:
+  geo_feat_dim: 15
+  hidden_dim: 32
+  num_layers: 2
+  num_layers_color: 2
+  hidden_dim_color: 32
+  tcnn_network: False
+
+cam: 
+  H: 720 
+  W: 1280 
+  fx: 663.72497136
+  fy: 661.02307276
+  cx: 638.02311807
+  cy: 357.98090814
+  png_depth_scale: 1000.0
+  crop_edge: 0 
+  near: 0
+  far: 8 
+  depth_trunc: 100. 
+
+training:
+  rgb_weight: 5.0 
+  depth_weight: 0.1 
+  sdf_weight: 1000 
+  fs_weight: 10 
+  surface_weight: 0 
+  eikonal_weight: 0
+  smooth_weight: 0.001 
+  smooth_pts: 64
+  smooth_vox: 0.1
+  smooth_margin: 0.05
+  n_samples_d: 11 
+  range_d: 0.5 
+  n_range_d: 48 
+  n_importance: 0
+  perturb: 1
+  white_bkgd: False
+  c_trunc: 0.25 
+  trunc: 0.06 
+  rot_rep: 'quat'
+  rgb_missing: 0.0 # Would cause some noisy points around free space, but better completion
+
+mesh:
+  resolution: 512
+  vis: 1000
+  voxel_eval: 0.1
+  voxel_final: 0.05 
+  visualisation: False
+  mesh_bound_scale: 1.02
+  only_final: 1 
+  render_img: 0
+
+volume:
+  voxel_size: 0.02 
+  version: center
+  trunc: 0.06 
+  weight_threshold: 2.0 
+  weight_clamp: 1.0
+  # Center Version
+  t_treshold: 1 
+  x_config:
+    fix: 0
+    len: 7 
+    range: [0,1]
+  y_config:
+    fix: 0
+    len: 7 
+    range: [0,1]
+  z_config:
+    fix: 0
+    len: 3 
+    range: [0,1]
+  # More Version
+  first_len: 4
+  second_len: 4
+  third_len: 3
+  more_angel_t: 20
+
+video:
+  save: False
+  save_freq: 20

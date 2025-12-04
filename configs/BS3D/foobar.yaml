@@ -1,0 +1,11 @@
+inherit_from: configs/BS3D/BS3D.yaml
+mapping:
+  bound: [[-11.0,15.0],[-12.0,15.0],[-3.0,4.0]]
+  marching_cubes_bound: [[-11.0,15.0],[-12.0,15.0],[-3.0,4.0]]
+
+data:
+  datadir: /data/lyq/BS3D/foobar
+  trainskip: 1
+  output: output/BS3D/foobar
+  exp_name: test
+

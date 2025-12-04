@@ -1,0 +1,12 @@
+inherit_from: configs/uhumans/uhumans.yaml
+mapping:
+  bound: [[-19.0,7.0],[-9.0,5.0],[-1.0,7.0]]
+  marching_cubes_bound: [[-19.0,7.0],[-9.0,5.0],[-1.0,7.0]]
+
+data:
+  datadir: /home/lanyuqing/dataset/uHumans/apartment
+  trainskip: 1
+  output: output/uhumans/apartment
+  exp_name: test
+
+  

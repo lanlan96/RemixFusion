@@ -1,0 +1,10 @@
+inherit_from: configs/Replica/replica.yaml
+mapping:
+  bound: [[-6.0,2.0],[-5.0,3.0],[-2.0,2.0]]
+  marching_cubes_bound: [[-6.0,2.0],[-5.0,3.0],[-2.0,2.0]]
+
+data:
+  datadir: /home/lanyuqing/dataset/Replica/room1
+  trainskip: 1
+  output: output/Replica/room1
+  exp_name: test

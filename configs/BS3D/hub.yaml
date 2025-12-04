@@ -1,0 +1,10 @@
+inherit_from: configs/BS3D/BS3D.yaml
+mapping:
+  bound: [[30.0,55.0],[-130.0,-108.0],[-7.0,1.0]]
+  marching_cubes_bound: [[30.0,55.0],[-130.0,-108.0],[-7.0,1.0]]
+
+data:
+  datadir: /data/lyq/BS3D/hub
+  trainskip: 1
+  output: output/BS3D/hub
+  exp_name: test 

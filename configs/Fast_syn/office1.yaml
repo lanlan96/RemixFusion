@@ -1,0 +1,11 @@
+inherit_from: configs/Fast_syn/Fast_syn.yaml
+mapping:
+  bound: [[-3.0,4.0],[-2.0,3.0],[-2.0,3.0]]
+  marching_cubes_bound: [[-3.0,4.0],[-2.0,3.0],[-2.0,3.0]]
+  
+data:
+  datadir: /media/lyq/data/dataset/Fastcamo-synth/FastCaMo-synth-data(raw)/office_1/frames/
+  trainskip: 1
+  output: output/Fast_syn/office1
+  exp_name: test 
+

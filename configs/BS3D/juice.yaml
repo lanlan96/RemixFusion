@@ -1,0 +1,10 @@
+inherit_from: configs/BS3D/BS3D.yaml
+mapping:
+  bound: [[46.0,58.0],[-110.0,-90.0],[-10.0,-2.0]] 
+  marching_cubes_bound: [[46.0,58.0],[-110.0,-90.0],[-10.0,-2.0]]
+
+data:
+  datadir: /data/lyq/BS3D/juice
+  trainskip: 1
+  output: output/BS3D/juice
+  exp_name: test

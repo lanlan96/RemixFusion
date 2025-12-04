@@ -1,0 +1,11 @@
+inherit_from: configs/BS3D/BS3D.yaml
+mapping:
+  bound: [[0.0,43.0],[-165.0,-154.0],[-8,2]]
+  marching_cubes_bound: [[0.0,43.0],[-165.0,-154.0],[-8,2]]
+
+data:
+  datadir: /data/lyq/BS3D/corridor
+  trainskip: 1
+  output: output/BS3D/corridor
+  exp_name: test
+

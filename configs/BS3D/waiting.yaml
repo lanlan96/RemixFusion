@@ -1,0 +1,11 @@
+inherit_from: configs/BS3D/BS3D.yaml
+mapping:
+  bound: [[21.0,47.0],[-220.0,-195.0],[-8.0,3.0]]
+  marching_cubes_bound: [[21.0,47.0],[-220.0,-195.0],[-8.0,3.0]]
+
+data:
+  datadir: /data/lyq/BS3D/waiting
+  trainskip: 1
+  output: output/BS3D/waiting  
+  exp_name: test
+

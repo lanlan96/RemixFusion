@@ -1,0 +1,22 @@
+inherit_from: configs/uhumans/uhumans.yaml
+mapping:
+  bound: [[-21.0,35],[-2.0,62.0],[0.0,6.0]]
+  marching_cubes_bound: [[-21.0,35],[-2.0,62.0],[0.0,6.0]]
+  clamp: 1.1
+
+data:
+  datadir: /home/lanyuqing/dataset/uHumans/office
+  trainskip: 1
+  output: output/uhumans/office
+  exp_name: test
+
+volume:
+  voxel_size: 0.05 
+  trunc: 0.15 
+  weight_clamp: 0.0
+  x_config:
+    len: 25 
+  y_config:
+    len: 25
+  z_config:
+    len: 4
