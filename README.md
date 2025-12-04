@@ -13,8 +13,8 @@ ACM Transactions on Graphics (to be presented at SIGGRAPH Asia 2025)
 [Yuqing Lan](https://scholar.google.com/citations?user=laTrw7AAAAAJ&hl=en&oi=ao), [Chenyang Zhu](https://www.zhuchenyang.net/), [Shuaifeng Zhi](https://shuaifengzhi.com/), [Jiazhao Zhang](https://jzhzhang.github.io/), [Zhoufeng Wang](https://github.com/yhanCao), [Renjiao Yi](https://renjiaoyi.github.io/), [Yijie Wang](https://ieeexplore.ieee.org/author/37540196000), [Kai Xu](https://kevinkaixu.net/)
 </div>
 
-##  News
-- **2025-12-01**: Codes are released.
+## 📢 News
+- **2025-12-05**: Codes are released.
 - **2025-07-17**: The arxiv paper is online.
 
 
@@ -69,7 +69,7 @@ python preprocess/preprocess.py /PATH/BS3D/SCENE_NAME
 
 ### 3.2 (Recommended) Download Preprocessed Data
 
-### BS3D and uHumans2
+### 3.2.1 BS3D and uHumans2
 We have uploaded the proprocessed sequences to the [hugging face](https://huggingface.co/datasets/Kevin1804/RemixFusion/tree/main/). You can just download the preprocessed datasets (BS3D and uHumans2). First, you need to install `huggingface_hub`
 ```
 pip install -U huggingface_hub
@@ -121,7 +121,7 @@ uHumans2/
 ```
 </details>
 
-### ScanNet
+### 3.2.2 ScanNet
 Please follow the procedure on the official [ScanNet](http://www.scan-net.org/) website, and extract RGB-D frames from the `.sens` file using the [code](https://github.com/ScanNet/ScanNet/blob/master/SensReader/python/reader.py).
 
 The data structure for ScanNet is like this:
@@ -152,7 +152,7 @@ ScanNet/
 ```
 </details>
 
-### Replica
+### 3.2.3 Replica
 Download the data using the command (provided by [NICE-SLAM](https://github.com/cvg/nice-slam)) and the data is saved into the `./data/Replica` folder. 
 ```bash
 bash scripts/download_replica.sh
@@ -161,14 +161,14 @@ bash scripts/download_replica.sh
 The mesh for evaluation is saved as `$OUTPUT_FOLDER/mesh/final_mesh_eval_rec.ply`, where the unseen regions are culled using all frames.
 
 
-### TUM RGB-D
+### 3.2.4 TUM RGB-D
 Download the data using the command and the data is saved into the `./data/TUM` folder
 ```bash
 bash scripts/download_tum.sh
 ```
 
 
-### Other Datasets
+### 3.2.5 Other Datasets
 For other datsets (e.g. [FastCaMo](https://drive.google.com/drive/folders/186viK0tSAFVDO_6YJbC3MGXOXzcBQT_z), [FastCaMo-large](https://drive.google.com/drive/folders/186viK0tSAFVDO_6YJbC3MGXOXzcBQT_z) and self captured datasets), please download the data and prepare the data following the procedure mentioned above. 
 
 
@@ -176,32 +176,32 @@ For other datsets (e.g. [FastCaMo](https://drive.google.com/drive/folders/186viK
 
 ## 4. Run
 In this section, we introduce how to run RemixFusion on different datasets. After you have prepared the datasets according to the instructions above, you can run the following commands to try RemixFusion on the specific sequence.
-### BS3D
+### 4.1 BS3D
 Please change the `datadir` in the `config/SEQUENCE.yaml` to the root of the processed BS3D sequence. Customize the `--config` to the sequence you want to try.
 ```
 python run.py --config ./configs/BS3D/foobar.yaml
 ```
-### uHumans2
+### 4.2 uHumans2
 Please change the `datadir` in the `config/SEQUENCE.yaml` to the root of the processed uHumans2 sequence. Customize the `--config` to the sequence you want to try.
 ```
 python run.py --config ./configs/uhumans/apartment.yaml
 ```
-### Replica
+### 4.3 Replica
 Please change the `datadir` in the `config/SEQUENCE.yaml` to the root of the processed Replica sequence. Customize the `--config` to the sequence you want to try.
 ```
 python run.py --config ./configs/Replica/room0.yaml
 ```
-### ScanNet
+### 4.4 ScanNet
 Please change the `datadir` in the `config/SEQUENCE.yaml` to the root of the processed ScanNet sequence. Customize the `--config` to the sequence you want to try.
 ```
 python run.py --config ./configs/ScanNet/scene0169.yaml
 ```
-### TUM RGB-D
+### 4.5 TUM RGB-D
 Please change the `datadir` in the `config/SEQUENCE.yaml` to the root of the processed TUM RGB-D sequence. Customize the `--config` to the sequence you want to try.
 ```
 python run.py --config ./configs/Tum/fr1_desk.yaml
 ```
-### FastCaMo-synth
+### 4.6 FastCaMo-synth
 Please change the `datadir` in the `config/SEQUENCE.yaml` to the root of the processed FastCaMo-synth sequence. Customize the `--config` to the sequence you want to try.
 ```
 python run.py --config ./configs/Fast_syn/apartment_1.yaml
