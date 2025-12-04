@@ -4,7 +4,11 @@
 ACM Transactions on Graphics (to be presented at SIGGRAPH Asia 2025)
 
 <a href="https://arxiv.org/pdf/2507.17594"><img src="https://img.shields.io/badge/arXiv-2507.17594-b31b1b" alt="arXiv"></a>
+<a href="https://dl.acm.org/doi/abs/10.1145/3769007" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Paper-VGGT" alt="Paper PDF">
+</a>
 <a href="https://lanlan96.github.io/RemixFusion/"><img src="https://img.shields.io/badge/Project_Page-green" alt="Project Page"></a>
+<a href="https://huggingface.co/datasets/Kevin1804/RemixFusion"><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue'></a>
 
 [Yuqing Lan](https://scholar.google.com/citations?user=laTrw7AAAAAJ&hl=en&oi=ao), [Chenyang Zhu](https://www.zhuchenyang.net/), [Shuaifeng Zhi](https://shuaifengzhi.com/), [Jiazhao Zhang](https://jzhzhang.github.io/), [Zhoufeng Wang](https://github.com/yhanCao), [Renjiao Yi](https://renjiaoyi.github.io/), [Yijie Wang](https://ieeexplore.ieee.org/author/37540196000), [Kai Xu](https://kevinkaixu.net/)
 </div>
